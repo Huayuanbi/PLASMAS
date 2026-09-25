@@ -1,0 +1,108 @@
+{
+  "profile": "non_math",
+  "official_category_counts": {
+    "test": {
+      "business": 789,
+      "law": 1101,
+      "psychology": 798,
+      "biology": 717,
+      "chemistry": 1132,
+      "history": 381,
+      "other": 924,
+      "health": 818,
+      "economics": 844,
+      "math": 1351,
+      "physics": 1299,
+      "computer science": 410,
+      "philosophy": 499,
+      "engineering": 969
+    },
+    "validation": {
+      "math": 5,
+      "health": 5,
+      "physics": 5,
+      "business": 5,
+      "biology": 5,
+      "chemistry": 5,
+      "computer science": 5,
+      "economics": 5,
+      "engineering": 5,
+      "philosophy": 5,
+      "other": 5,
+      "history": 5,
+      "psychology": 5,
+      "law": 5
+    }
+  },
+  "local_counts": {
+    "train": 7470,
+    "dev": 1070,
+    "heldout": 2141,
+    "official_validation": 65
+  },
+  "local_category_counts": {
+    "train": {
+      "biology": 501,
+      "business": 552,
+      "chemistry": 792,
+      "computer science": 287,
+      "economics": 590,
+      "engineering": 678,
+      "health": 572,
+      "history": 266,
+      "law": 770,
+      "other": 646,
+      "philosophy": 349,
+      "physics": 909,
+      "psychology": 558
+    },
+    "dev": {
+      "biology": 72,
+      "business": 79,
+      "chemistry": 113,
+      "computer science": 41,
+      "economics": 85,
+      "engineering": 97,
+      "health": 82,
+      "history": 38,
+      "law": 110,
+      "other": 93,
+      "philosophy": 50,
+      "physics": 130,
+      "psychology": 80
+    },
+    "heldout": {
+      "biology": 144,
+      "business": 158,
+      "chemistry": 227,
+      "computer science": 82,
+      "economics": 169,
+      "engineering": 194,
+      "health": 164,
+      "history": 77,
+      "law": 221,
+      "other": 185,
+      "philosophy": 100,
+      "physics": 260,
+      "psychology": 160
+    },
+    "official_validation": {
+      "health": 5,
+      "physics": 5,
+      "business": 5,
+      "biology": 5,
+      "chemistry": 5,
+      "computer science": 5,
+      "economics": 5,
+      "engineering": 5,
+      "philosophy": 5,
+      "other": 5,
+      "history": 5,
+      "psychology": 5,
+      "law": 5
+    }
+  },
+  "seed": 42,
+  "revision": "b189ec765aa7ed75c8acfea42df31fdae71f97be",
+  "note": "Local train/dev/heldout partition official test; not official benchmark scores."
+}

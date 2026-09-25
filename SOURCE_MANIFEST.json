@@ -1,0 +1,137 @@
+{
+  "paper": "docs/ICLR27_MultiAgentSystem.pdf",
+  "paper_sha256": "e84612cf02d82f1aa56580fbee007df9018a7f106e9b0dee0956558b2cc1a949",
+  "files": [
+    {
+      "source": "MAS_DAG/data.py",
+      "destination": "plasmas/data.py",
+      "source_sha256": "31731e7e843bd7bcff081bc6b6ffcc8bd61b55dfb6a373c67bf2fcb86b6a1363"
+    },
+    {
+      "source": "MAS_DAG/topology_sampling.py",
+      "destination": "plasmas/topology_sampling.py",
+      "source_sha256": "d8bc724897580c5bf7ecb069cab6942ac22cb496897a3033de1f0bf5600934e9"
+    },
+    {
+      "source": "MAS_DAG/mas_runtime.py",
+      "destination": "plasmas/mas_runtime.py",
+      "source_sha256": "47ef6a0a248edaf0d8ece6b25ee5e8baf6efcd7b004a433d10b5d86d64ae613e"
+    },
+    {
+      "source": "MAS_DAG/qwen_topology_dpo.py",
+      "destination": "plasmas/qwen_topology_dpo.py",
+      "source_sha256": "db26c147fea14ec1b194d0b8a9d77a4109427acdb147d4f4762ed4ee2783ec2e"
+    },
+    {
+      "source": "MAS_DAG/qwen_graph_dpo.py",
+      "destination": "plasmas/qwen_graph_dpo.py",
+      "source_sha256": "0a0aff8920cf1a32b8ef3a3b74f633af5dd38bf9be4d417d1f6e137ab8431de7"
+    },
+    {
+      "source": "data_generation/math_pipeline.py",
+      "destination": "data_generation/math_pipeline.py",
+      "source_sha256": "f7d26ad7ede30e2164b5214987feaf12ed456392a0825dda93f9e07c01483505"
+    },
+    {
+      "source": "data_generation/mmlu_pro_pipeline.py",
+      "destination": "data_generation/mmlu_pro_pipeline.py",
+      "source_sha256": "1d1b33461742f2cc05d92cf5500bdb76559f01f004066c2974aec43206d4c06c"
+    },
+    {
+      "source": "data_generation/run_mas.py",
+      "destination": "data_generation/run_mas.py",
+      "source_sha256": "7b46bfc053ffa00830b2c9b0b36eb24bf76c40ed55258652dcd94f052961ae33"
+    },
+    {
+      "source": "data_generation/dpo_refresh.py",
+      "destination": "data_generation/dpo_refresh.py",
+      "source_sha256": "9766c7de42a10e488e2f0ac220ed124ef7485130bdccfb0635035b7fe6c5b64d"
+    },
+    {
+      "source": "data_generation/reselect_dpo_pairs.py",
+      "destination": "data_generation/reselect_dpo_pairs.py",
+      "source_sha256": "8d676f0a4d2756e20721e33fbcff1c773a822958adb197af8134ce56761edb3c"
+    },
+    {
+      "source": "train_qwen_topology_sft.py",
+      "destination": "train_sft.py",
+      "source_sha256": "0413eb4578824f35d7c9e9846dcda160470b4362c75a5002e2fc5db169934618"
+    },
+    {
+      "source": "train_qwen_graph_dpo.py",
+      "destination": "train_dpo.py",
+      "source_sha256": "0a4d4fc688fa09a6fe0c9c49541a5b92824f22d66227622ac4021821fe01fa27"
+    },
+    {
+      "source": "pilots/build_difficulty_benchmark.py",
+      "destination": "evaluation/build_benchmark400.py",
+      "source_sha256": "049f9305d33f1b701c769ec944d24e279e3c950a244785dabbeb8443c137f305"
+    },
+    {
+      "source": "data/math/topology_pilot_4x100.json",
+      "destination": "data/math/benchmark400.json",
+      "source_sha256": "81c27fb29c82535c58a40342a80edcfc4070b8a06b0db521be4df94828a98cfe"
+    },
+    {
+      "source": "data/math/test_anchors_5_delta_levels.json",
+      "destination": "data/math/test_anchors_5_delta_levels.json",
+      "source_sha256": "a2aa9a8a44eaa2efbe6ac8bc99b4f3ff048331dcf77472f338017165c04ee5aa"
+    },
+    {
+      "source": "data/math/math_train_1000x12_avg5.json",
+      "destination": "data/math/math_train_1000x12_avg5.json",
+      "source_sha256": "9cc605ebefef4b05278082d8aeae61810860862b037208baac97ceab975573ad"
+    },
+    {
+      "source": "data/mmlu_pro/non_math/mmlu_pro_train_1000x12_avg5.json",
+      "destination": "data/mmlu_pro/non_math/mmlu_pro_train_1000x12_avg5.json",
+      "source_sha256": "54ad7c30f8447d9e3c8136d00489e1cc04bdb3a9da843e292e7e0c9c8c8352a3"
+    },
+    {
+      "source": "data/mmlu_pro/non_math/heldout.json",
+      "destination": "data/mmlu_pro/non_math/heldout.json",
+      "source_sha256": "c43b468d912f2f74a8baea9fa9708e449823e632ecf5aca06269847af720e7bb"
+    },
+    {
+      "source": "data/mmlu_pro/non_math/split_manifest.json",
+      "destination": "data/mmlu_pro/non_math/split_manifest.json",
+      "source_sha256": "9a92ece1682e423d2c407e6aa2f9683b65db35cbf6abf2ef2a72cbf4aa98b43a"
+    },
+    {
+      "source": "data/node_pools/math_6_roles.json",
+      "destination": "data/node_pools/math_6_roles.json",
+      "source_sha256": "22c249b0b2d5a33efa6599e2652c422314a845bb1697f5fdd353c13e7ba8a87f"
+    },
+    {
+      "source": "data/node_pools/mmlu_pro_6_roles.json",
+      "destination": "data/node_pools/mmlu_pro_6_roles.json",
+      "source_sha256": "e52dbea446ce04936c9c7ec3341be48a0676b58dfd25495f3ea3212c663dbe2d"
+    },
+    {
+      "source": "train_qwen_topology_dpo.py",
+      "destination": "training_utils.py",
+      "source_sha256": "e1a6ecd0d7a7da995e3f376935ead350499602a40c17890c0525049aedaaf44a",
+      "extracted_symbols": [
+        "FlatPairDataset",
+        "DPOCollator",
+        "completion_logps",
+        "dpo_losses",
+        "move_batch",
+        "_forward_completion_logps",
+        "policy_and_reference_logps"
+      ]
+    },
+    {
+      "source": "pilots/run_qwen_direct_topology_pilot.py",
+      "destination": "evaluation/topology_io.py",
+      "source_sha256": "aafcbdd95bb8a7839324df8213225e23b1f12bac5f203656db0f81fe65573c70",
+      "extracted_symbols": [
+        "role_text",
+        "user_prompt",
+        "extract_json",
+        "validate_topology"
+      ]
+    }
+  ],
+  "note": "Source hashes describe the original implementation. CHECKSUMS.sha256 describes the release files; dataset metadata paths are anonymized without changing question records."
+}

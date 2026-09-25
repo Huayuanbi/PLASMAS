@@ -1,0 +1,5 @@
+# Install into a separate Python 3.11 virtual environment.
+vllm==0.8.5
+transformers==4.57.6
+openai==3.6.0
+numpy==2.2.6

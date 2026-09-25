@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-25",
+  "unit_tests": {
+    "passed": 13,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "syntax": "all Python sources compile",
+  "benchmark400": {
+    "records": 400,
+    "rebuild_records_equal": true,
+    "groups": {
+      "easy": 100,
+      "medium": 100,
+      "collaboration_required": 100,
+      "hard_unsolved": 100
+    }
+  },
+  "corpora": {
+    "math": {
+      "questions": 1000,
+      "topologies": 12000,
+      "represented_rollouts": 60000,
+      "validation": "passed",
+      "selection_groups": {
+        "expert_gain": 494,
+        "high_high": 400,
+        "low_low_different": 106
+      }
+    },
+    "mmlu_pro": {
+      "questions": 1000,
+      "topologies": 12000,
+      "represented_rollouts": 60000,
+      "validation": "passed",
+      "selection_groups": {
+        "expert_gain": 500,
+        "high_high": 350,
+        "low_low_nonzero": 150
+      }
+    }
+  },
+  "sft_data_dry_runs": {
+    "math": {
+      "train": 900,
+      "validation": 100,
+      "max_tokens": 2295
+    },
+    "mmlu_pro": {
+      "train": 900,
+      "validation": 100,
+      "max_tokens": 1917
+    },
+    "tokenizer_used": "Qwen/Qwen3-1.7B tokenizer downloaded from the public Hub"
+  },
+  "not_run": [
+    "Full Qwen3 model weight download",
+    "GPU training",
+    "Fresh vLLM executions",
+    "Paper table reproduction"
+  ],
+  "dependency_audit": "No imports from pilots, modernbert_transformers, sentence_transformers, torch_geometric",
+  "fresh_install": {
+    "python": "3.11",
+    "isolated_venv": true,
+    "system_site_packages": false,
+    "torch": "2.4.1+cpu",
+    "pip_check": "passed",
+    "requirements_install": "passed",
+    "setup_check": "passed",
+    "serving_dependencies": "fresh isolated venv installation and pip check passed; vllm serve --help passed with no GPU visible"
+  },
+  "cpu_training_smoke": "tiny randomly initialized Qwen3: SFT update, adapter save/reload, SFT merge, fresh DPO adapter, backward gradients and frozen reference checks passed",
+  "release_checks": {
+    "personal_paths_removed": true,
+    "question_records_unchanged": true,
+    "clean_git_clone": "passed: no PYTHONPATH, empty HF cache, offline mode, CPU only; imports, 13 tests, fixed benchmark rebuild, training command previews and checksums",
+    "excluded_from_git": [
+      "model weights",
+      "virtual environments",
+      "runtime outputs",
+      "logs",
+      "Python bytecode"
+    ]
+  },
+  "model_download_check": {
+    "repository": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "tokenizer_and_config": "downloaded and used for both 900/100 SFT data dry runs",
+    "full_weights": "not downloaded"
+  }
+}
